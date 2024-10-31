@@ -1,0 +1,144 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #e8f5e9; /* Light green */
+    background: linear-gradient(to right, #c8e6c9, #e8f5e9);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.user-info .name {
+    font-weight: bold;
+}
+
+.user-info .email {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Dropdown Menu */
+.menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.menu-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Points Section */
+.points-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.points-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.points-section div {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4caf50;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.green {
+    background-color: #4caf50;
+}
+
+.btn.red {
+    background-color: #f44336;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
